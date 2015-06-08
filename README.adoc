@@ -1,0 +1,92 @@
+= Indice
+Jose Juan Montiel <josejuan.montiel@tecnilogica.com>
+Charla Gradle
+:toc:
+:source-highlighter: coderay
+:revealjs_theme:  blood
+
+== Quien soy
+
+=== Como conocí groovy a través de freemind y la lectura de tareas de fogbuz
+[source,groovy]
+----
+class ClienteQuery {
+
+	def query = new Query();
+	def getQuery(q) {
+		println "Se va a realizar la query: "+q
+		query.getQuery(q)
+	}
+	String toString() { 'Client: ' + hashCode()}
+
+}
+----
+
+=== Como conocí greach. Java hispano a posteriormente vi los vídeos.
+=== En greach conocí Madrid gug
+
+== Maven: Regreso al futuro I
+
+=== Proyecto de ejemplo springboot para cms con jacrabbit
+==== Api de creación
+==== Api qyuue lista tipos disponibles
+
+=== Usar librerías gradle migrandola a maven
+
+=== Añadir al proyecto puntos extra con pluging
+==== Documentación
+==== Lectura de json para api (doc tipo swagger) y mostrar en doce tipos disponibles
+
+== Gradle: Regreso al futuro II
+
+=== Que es gradle
+==== Groovy
+==== Tasks
+==== Consola
+
+=== Creación de plugins inline
+==== Saber de donde esta cogiendo mis librerias
+
+=== Que tiene que aportar respecto a maven. Puntos fuertes/debiles
+==== Round 1: Xml vs Codigo
+==== Round 2: Convecion sobre configuracion
+==== Round 3: Ciclo de vida mas extenso
+==== Round 4: Scripting, mas facil por ser codigo
+==== Round 5: Puede “agrupar” dependencias
+==== Round 6: soporte en ides algo menor.
+
+=== Asciidoctor para documentos
+==== Generando el .adoc desde un builder
+
+=== Gradle como herramienta para proyectos en cualquier lenguaje de la JVM (Java/Groovy/Clojure/Scala) y no de la JVM (Cpp por ejemplo)
+==== ¿Compilar librería scala para usar dentro de spring boot?
+==== Compilar C+: http://carlosvin.github.io/posts/gradle-cpp.html
+
+=== Como usar su ciclo de vida para NO compilar sobreescribiendo los puntos principales y hacer otra cosa
+==== Así ves el ciclo de vida más extenso respecto a maven
+
+=== building en paralelo
+=== Es sencillo pasar posibles tareas a plugins (buildSrc --> construccion de plugin) en comparación con maven
+=== Quien lo usa
+=== Por donde empezar
+
+== Lo que había antes: Regreso al futuro III
+=== Ant (ivy)
+==== Configuracion sobre convencion
+==== Basado en xml
+==== No gestiona bien dependencias (Ivy)
+
+=== Make
+
+== Bola extra: La jungla 4. Salvemos el mundo. Groovy en android.
+=== Cedric Champeau: los posts de cedric son de donde he sacado la mayor informacion sobre Groovy/Android https://github.com/melix
+=== SwissKnife: Biblioteca Groovy para reducir el codigo de una aplicacion Android con Groovy. https://github.com/Arasthel/SwissKnife o http://arasthel.github.io/SwissKnife/
+=== Grooid templates: Generador de proyectos de Groovy/Android con Lazybones. http://mariogarcia.github.io/grooid-templates/
+
+=== Refencia: https://www.youtube.com/watch?v=e1I2h9fyeno
+
+=== Groovy/Gradle/Asciidoctor
+=== Diferencias entre ascidoctor y ascidoc
+=== http://asciidoctor.org/docs/asciidoc-asciidoctor-diffs/
+=== Jbake + thymeleaf: https://github.com/jbake-org/jbake-example-project-thymeleaf
+=== asciidoctorj-groovy-dsl: https://github.com/asciidoctor/asciidoctorj-groovy-dsl
