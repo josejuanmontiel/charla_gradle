@@ -1,13 +1,40 @@
 = Indice
 Jose Juan Montiel <josejuan.montiel@tecnilogica.com>
-Charla Gradle
+Build Tools: Grad' to the future
 :toc:
 :source-highlighter: coderay
 :revealjs_theme:  blood
+// :revealjs_parallaxBackgroundImage: images/backtofuture_trilogy.jpg
+:imagesdir: images/
+:sourcedir01: 001-ejemplo1/src/main/java
+
+== Abstract
+¿Eres javero de toda la vida? ¿Mavenizas todo lo que tocas? ¿Diste tus primeros pasos con la hormiga? Regresa al futuro, tenemos groovy, tenemos gradle y mas de cien plugins que valen la pena.
+
+Asi que si quieres saber como dar el salto a la "build tool" del presente, acompañame porque veremos:
+
+* Como partiendo de un proyecto springboot con maven,
+* podemos transformar librerias constuirdas con gradle a maven,
+* para darnos cuenta de que lo que interesa es migrar nuestro proyecto a gradle,
+* y para entender como funciona esta build tool, recorreremos el ciclo de vida en un proyecto gradle,
+* veremos que mas puede hacer gradle (incluso fuera de la JVM)
+* y como bola extra daremos un repaso a otras las build tools de las que no sabia su existencia.
 
 == Quien soy
+Javero de nacimiento, pero ciudadano de la JVM.
+Trabajando ya unos años en Tecnilogica, siempre con Java a capa y espada, pero con ganas de Groovy.
+Sospechoso de MadridGUG, donde siempre hay algo que aprender.
+Debian distro fan, siempre con ganas de trastear, ahora con algo de hardware.
+Marido y padre de 2 niñas, que me dan un punto de vista "bajito" de las cosas. 
 
 === Como conocí groovy a través de freemind y la lectura de tareas de fogbuz
+
+[source,java]
+.Java code from project
+----
+include::{sourcedir01}/prueba.java[tags=contains,indent=0]
+----
+
 [source,groovy]
 ----
 class ClienteQuery {
@@ -25,11 +52,19 @@ class ClienteQuery {
 === Como conocí greach. Java hispano a posteriormente vi los vídeos.
 === En greach conocí Madrid gug
 
+== Regreso al futuro
+image::backtofuture_trilogy.jpg[]
+
+[NOTE.speaker]
+--
+Actually things aren't that bad
+--
+
 == Maven: Regreso al futuro I
 
 === Proyecto de ejemplo springboot para cms con jacrabbit
 ==== Api de creación
-==== Api qyuue lista tipos disponibles
+==== Api que lista tipos disponibles
 
 === Usar librerías gradle migrandola a maven
 
@@ -78,7 +113,13 @@ class ClienteQuery {
 
 === Make
 
-== Bola extra: La jungla 4. Salvemos el mundo. Groovy en android.
+== Bola extra: La jungla 4.
+=== Otras build tools
+* http://pantsbuild.github.io/from_maven.html[Pants]
+* http://tweaker.sourceforge.net/general_overview.xml[Tweaker]
+
+
+== Bola extra 2: Salvemos el mundo. Groovy en android.
 === Cedric Champeau: los posts de cedric son de donde he sacado la mayor informacion sobre Groovy/Android https://github.com/melix
 === SwissKnife: Biblioteca Groovy para reducir el codigo de una aplicacion Android con Groovy. https://github.com/Arasthel/SwissKnife o http://arasthel.github.io/SwissKnife/
 === Grooid templates: Generador de proyectos de Groovy/Android con Lazybones. http://mariogarcia.github.io/grooid-templates/
@@ -90,3 +131,14 @@ class ClienteQuery {
 === http://asciidoctor.org/docs/asciidoc-asciidoctor-diffs/
 === Jbake + thymeleaf: https://github.com/jbake-org/jbake-example-project-thymeleaf
 === asciidoctorj-groovy-dsl: https://github.com/asciidoctor/asciidoctorj-groovy-dsl
+
+[data-background="yellow"]
+== Slide Three
+Is very yellow
+
+== Slide Four
+[%step]
+* this
+* is
+* revealed
+* gradually
