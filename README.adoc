@@ -25,9 +25,15 @@ Javero de nacimiento, pero ciudadano de la JVM.
 Trabajando ya unos años en Tecnilogica, siempre con Java a capa y espada, pero con ganas de Groovy.
 Sospechoso de MadridGUG, donde siempre hay algo que aprender.
 Debian distro fan, siempre con ganas de trastear, ahora con algo de hardware.
-Marido y padre de 2 niñas, que me dan un punto de vista "bajito" de las cosas. 
+Marido y padre de 2 niñas, que me dan un punto de vista "bajito" de las cosas.
 
 === Como conocí groovy a través de freemind y la lectura de tareas de fogbuz
+
+La primera vez que hoy hablar de groovy seria a finales de 2010, principios de 2011.
+Yo usaba Freemind para hacer mapas mentales, y por aquel entonces la version 0.9 estaba a punto de salir,
+con soporte para groovy, que era eso? Un lenguaje dinamico como Javascript, que podia poner en el nodo de
+mi mapa mental para que hicera algo? Lo probe he hice cosas como estas, con la ayuda de la documentacion
+que encontraba por ahi...
 
 [source,java]
 .Java code from project
@@ -50,14 +56,22 @@ class ClienteQuery {
 ----
 
 === Como conocí greach. Java hispano a posteriormente vi los vídeos.
+
+Poco despues, escuchaba todo los podcast de JavaHispano, en el coche camino del trabajo, y en uno hablaron del Greach,
+que era eso, una conferencia, ya habia asistido a algunas organizadas por JavaHispano, asi que a esa primera no llegue,
+me vi los videos, y me apunte al Greach 2.0 de Enero de 2013.
+
 === En greach conocí Madrid gug
+
+Alli alguien habldo del grupo de usuarios de groovy de madrid, y me dije, seguro que aprendo algo, y asisti a charlas muy
+interesantes, hasta que me anime a colaborar y dar una, elegi Dropwrizar, y lo groovizamos un poco...
 
 == Regreso al futuro
 image::backtofuture_trilogy.jpg[]
 
 [NOTE.speaker]
 --
-Actually things aren't that bad
+Ahora empieza lo bueno...
 --
 
 == Maven: Regreso al futuro I
@@ -66,11 +80,16 @@ Actually things aren't that bad
 ==== Api de creación
 ==== Api que lista tipos disponibles
 
+=== A tener en cuenta
+Maven por defecto, esta preparado para compilar un proyecto java, no hace falta añadir plugin,
+y si queremos sobreescribir ese comportamiento podemos poner el plugin y cambiar valores.
+
+
 === Usar librerías gradle migrandola a maven
 
 === Añadir al proyecto puntos extra con pluging
 ==== Documentación
-==== Lectura de json para api (doc tipo swagger) y mostrar en doce tipos disponibles
+==== Lectura de json para api (doc tipo swagger) y mostrar en doc tipos disponibles
 
 == Gradle: Regreso al futuro II
 
@@ -78,6 +97,12 @@ Actually things aren't that bad
 ==== Groovy
 ==== Tasks
 ==== Consola
+
+=== A tener en cuenta
+En gradle, tenemos que "apply plugin" para que haga algo por defecto.
+Sino es un subconjunto de tareas que no tienen porque compilar.
+
+Por tanto, sino añadimos plugin java, no compila, y una vez puesto, tambien podemos sobreescribirlo.
 
 === Creación de plugins inline
 ==== Saber de donde esta cogiendo mis librerias
