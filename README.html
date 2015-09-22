@@ -1,191 +1,764 @@
-<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><meta name="author" content="Jose Juan Montiel"><title>Indice</title><meta content="yes" name="apple-mobile-web-app-capable"><meta content="black-translucent" name="apple-mobile-web-app-status-bar-style"><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui" name="viewport"><link href="reveal.js/css/reveal.css" rel="stylesheet"><link rel="stylesheet" href="reveal.js/css/theme/blood.css" id="theme"><style>/* Stylesheet for CodeRay to match GitHub theme | MIT License | http://foundation.zurb.com */
-/*pre.CodeRay {background-color:#f7f7f8;}*/
-.CodeRay .line-numbers{border-right:1px solid #d8d8d8;padding:0 0.5em 0 .25em}
-.CodeRay span.line-numbers{display:inline-block;margin-right:.5em;color:rgba(0,0,0,.3)}
-.CodeRay .line-numbers strong{font-weight: normal}
-table.CodeRay{border-collapse:separate;border-spacing:0;margin-bottom:0;border:0;background:none}
-table.CodeRay td{vertical-align: top}
-table.CodeRay td.line-numbers{text-align:right}
-table.CodeRay td.line-numbers>pre{padding:0;color:rgba(0,0,0,.3)}
-table.CodeRay td.code{padding:0 0 0 .5em}
-table.CodeRay td.code>pre{padding:0}
-.CodeRay .debug{color:#fff !important;background:#000080 !important}
-.CodeRay .annotation{color:#007}
-.CodeRay .attribute-name{color:#000080}
-.CodeRay .attribute-value{color:#700}
-.CodeRay .binary{color:#509}
-.CodeRay .comment{color:#998;font-style:italic}
-.CodeRay .char{color:#04d}
-.CodeRay .char .content{color:#04d}
-.CodeRay .char .delimiter{color:#039}
-.CodeRay .class{color:#458;font-weight:bold}
-.CodeRay .complex{color:#a08}
-.CodeRay .constant,.CodeRay .predefined-constant{color:#008080}
-.CodeRay .color{color:#099}
-.CodeRay .class-variable{color:#369}
-.CodeRay .decorator{color:#b0b}
-.CodeRay .definition{color:#099}
-.CodeRay .delimiter{color:#000}
-.CodeRay .doc{color:#970}
-.CodeRay .doctype{color:#34b}
-.CodeRay .doc-string{color:#d42}
-.CodeRay .escape{color:#666}
-.CodeRay .entity{color:#800}
-.CodeRay .error{color:#808}
-.CodeRay .exception{color:inherit}
-.CodeRay .filename{color:#099}
-.CodeRay .function{color:#900;font-weight:bold}
-.CodeRay .global-variable{color:#008080}
-.CodeRay .hex{color:#058}
-.CodeRay .integer,.CodeRay .float{color:#099}
-.CodeRay .include{color:#555}
-.CodeRay .inline{color:#00}
-.CodeRay .inline .inline{background:#ccc}
-.CodeRay .inline .inline .inline{background:#bbb}
-.CodeRay .inline .inline-delimiter{color:#d14}
-.CodeRay .inline-delimiter{color:#d14}
-.CodeRay .important{color:#555;font-weight:bold}
-.CodeRay .interpreted{color:#b2b}
-.CodeRay .instance-variable{color:#008080}
-.CodeRay .label{color:#970}
-.CodeRay .local-variable{color:#963}
-.CodeRay .octal{color:#40e}
-.CodeRay .predefined{color:#369}
-.CodeRay .preprocessor{color:#579}
-.CodeRay .pseudo-class{color:#555}
-.CodeRay .directive{font-weight:bold}
-.CodeRay .type{font-weight:bold}
-.CodeRay .predefined-type{color:inherit}
-.CodeRay .reserved,.CodeRay .keyword {color:#000;font-weight:bold}
-.CodeRay .key{color:#808}
-.CodeRay .key .delimiter{color:#606}
-.CodeRay .key .char{color:#80f}
-.CodeRay .value{color:#088}
-.CodeRay .regexp .delimiter{color:#808}
-.CodeRay .regexp .content{color:#808}
-.CodeRay .regexp .modifier{color:#808}
-.CodeRay .regexp .char{color:#d14}
-.CodeRay .regexp .function{color:#404;font-weight:bold}
-.CodeRay .string{color:#d20}
-.CodeRay .string .string .string{background:#ffd0d0}
-.CodeRay .string .content{color:#d14}
-.CodeRay .string .char{color:#d14}
-.CodeRay .string .delimiter{color:#d14}
-.CodeRay .shell{color:#d14}
-.CodeRay .shell .delimiter{color:#d14}
-.CodeRay .symbol{color:#990073}
-.CodeRay .symbol .content{color:#a60}
-.CodeRay .symbol .delimiter{color:#630}
-.CodeRay .tag{color:#008080}
-.CodeRay .tag-special{color:#d70}
-.CodeRay .variable{color:#036}
-.CodeRay .insert{background:#afa}
-.CodeRay .delete{background:#faa}
-.CodeRay .change{color:#aaf;background:#007}
-.CodeRay .head{color:#f8f;background:#505}
-.CodeRay .insert .insert{color:#080}
-.CodeRay .delete .delete{color:#800}
-.CodeRay .change .change{color:#66f}
-.CodeRay .head .head{color:#f4f}</style><link href="reveal.js/lib/css/zenburn.css" rel="stylesheet"><script type="text/javascript">document.write( '<link rel="stylesheet" href="reveal.js/css/print/' + ( window.location.search.match( /print-pdf/gi ) ? 'pdf' : 'paper' ) + '.css" type="text/css" media="print">' );</script></head><body><div class="reveal"><div class="slides"><section><h2>Indice</h2><p><small>Jose Juan Montiel</small></p></section><section><section id="_quien_soy"><h2>Quien soy</h2></section><section id="_como_conocí_groovy_a_través_de_freemind_y_la_lectura_de_tareas_de_fogbuz"><h2>Como conocí groovy a través de freemind y la lectura de tareas de fogbuz</h2><div class="listingblock"><div class="content"><pre class="CodeRay"><code class="groovy language-groovy"><span class="type">class</span> <span class="class">ClienteQuery</span> {
+<!DOCTYPE html><html lang="en" class="aspect-4-3"><head><meta charset="UTF-8" /><meta name="generator" content="Asciidoctor 1.5.2, dzslides backend" /><title>Indice</title><meta name="author" content="Build Tools: Grad' to the future" /><link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Oswald" /><style>
+/*
+ Theme: Default
+ Fonts: Oswald
 
-        <span class="keyword">def</span> query = <span class="keyword">new</span> <span class="predefined-type">Query</span>();
-        <span class="keyword">def</span> <span class="function">getQuery</span>(q) {
-                println <span class="string"><span class="delimiter">&quot;</span><span class="content">Se va a realizar la query: </span><span class="delimiter">&quot;</span></span>+q
-                query.getQuery(q)
-        }
-        <span class="predefined-type">String</span> toString() { <span class="string"><span class="delimiter">'</span><span class="content">Client: </span><span class="delimiter">'</span></span> + hashCode()}
+ <link href="http://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
 
-}</code></pre></div></div></section><section id="_como_conocí_greach_java_hispano_a_posteriormente_vi_los_vídeos"><h2>Como conocí greach. Java hispano a posteriormente vi los vídeos.</h2></section><section id="_en_greach_conocí_madrid_gug"><h2>En greach conocí Madrid gug</h2></section></section>
-<section><section id="_maven_regreso_al_futuro_i"><h2>Maven: Regreso al futuro I</h2></section><section id="_proyecto_de_ejemplo_springboot_para_cms_con_jacrabbit"><h2>Proyecto de ejemplo springboot para cms con jacrabbit</h2><section id="_api_de_creación"><h2>Api de creación</h2></section>
-<section id="_api_qyuue_lista_tipos_disponibles"><h2>Api qyuue lista tipos disponibles</h2></section></section><section id="_usar_librerías_gradle_migrandola_a_maven"><h2>Usar librerías gradle migrandola a maven</h2></section><section id="_añadir_al_proyecto_puntos_extra_con_pluging"><h2>Añadir al proyecto puntos extra con pluging</h2><section id="_documentación"><h2>Documentación</h2></section>
-<section id="_lectura_de_json_para_api_doc_tipo_swagger_y_mostrar_en_doce_tipos_disponibles"><h2>Lectura de json para api (doc tipo swagger) y mostrar en doce tipos disponibles</h2></section></section></section>
-<section><section id="_gradle_regreso_al_futuro_ii"><h2>Gradle: Regreso al futuro II</h2></section><section id="_que_es_gradle"><h2>Que es gradle</h2><section id="_groovy"><h2>Groovy</h2></section>
-<section id="_tasks"><h2>Tasks</h2></section>
-<section id="_consola"><h2>Consola</h2></section></section><section id="_creación_de_plugins_inline"><h2>Creación de plugins inline</h2><section id="_saber_de_donde_esta_cogiendo_mis_librerias"><h2>Saber de donde esta cogiendo mis librerias</h2></section></section><section id="_que_tiene_que_aportar_respecto_a_maven_puntos_fuertes_debiles"><h2>Que tiene que aportar respecto a maven. Puntos fuertes/debiles</h2><section id="_round_1_xml_vs_codigo"><h2>Round 1: Xml vs Codigo</h2></section>
-<section id="_round_2_convecion_sobre_configuracion"><h2>Round 2: Convecion sobre configuracion</h2></section>
-<section id="_round_3_ciclo_de_vida_mas_extenso"><h2>Round 3: Ciclo de vida mas extenso</h2></section>
-<section id="_round_4_scripting_mas_facil_por_ser_codigo"><h2>Round 4: Scripting, mas facil por ser codigo</h2></section>
-<section id="_round_5_puede_agrupar_dependencias"><h2>Round 5: Puede “agrupar” dependencias</h2></section>
-<section id="_round_6_soporte_en_ides_algo_menor"><h2>Round 6: soporte en ides algo menor.</h2></section></section><section id="_asciidoctor_para_documentos"><h2>Asciidoctor para documentos</h2><section id="_generando_el_adoc_desde_un_builder"><h2>Generando el .adoc desde un builder</h2></section></section><section id="_gradle_como_herramienta_para_proyectos_en_cualquier_lenguaje_de_la_jvm_java_groovy_clojure_scala_y_no_de_la_jvm_cpp_por_ejemplo"><h2>Gradle como herramienta para proyectos en cualquier lenguaje de la JVM (Java/Groovy/Clojure/Scala) y no de la JVM (Cpp por ejemplo)</h2><section id="__compilar_librería_scala_para_usar_dentro_de_spring_boot"><h2>¿Compilar librería scala para usar dentro de spring boot?</h2></section>
-<section id="_compilar_c_a_href_http_carlosvin_github_io_posts_gradle_cpp_html_class_bare_http_carlosvin_github_io_posts_gradle_cpp_html_a"><h2>Compilar C+: <a href="http://carlosvin.github.io/posts/gradle-cpp.html" class="bare">http://carlosvin.github.io/posts/gradle-cpp.html</a></h2></section></section><section id="_como_usar_su_ciclo_de_vida_para_no_compilar_sobreescribiendo_los_puntos_principales_y_hacer_otra_cosa"><h2>Como usar su ciclo de vida para NO compilar sobreescribiendo los puntos principales y hacer otra cosa</h2><section id="_así_ves_el_ciclo_de_vida_más_extenso_respecto_a_maven"><h2>Así ves el ciclo de vida más extenso respecto a maven</h2></section></section><section id="_building_en_paralelo"><h2>building en paralelo</h2></section><section id="_es_sencillo_pasar_posibles_tareas_a_plugins_buildsrc_construccion_de_plugin_en_comparación_con_maven"><h2>Es sencillo pasar posibles tareas a plugins (buildSrc -&#8594; construccion de plugin) en comparación con maven</h2></section><section id="_quien_lo_usa"><h2>Quien lo usa</h2></section><section id="_por_donde_empezar"><h2>Por donde empezar</h2></section></section>
-<section><section id="_lo_que_había_antes_regreso_al_futuro_iii"><h2>Lo que había antes: Regreso al futuro III</h2></section><section id="_ant_ivy"><h2>Ant (ivy)</h2><section id="_configuracion_sobre_convencion"><h2>Configuracion sobre convencion</h2></section>
-<section id="_basado_en_xml"><h2>Basado en xml</h2></section>
-<section id="_no_gestiona_bien_dependencias_ivy"><h2>No gestiona bien dependencias (Ivy)</h2></section></section><section id="_make"><h2>Make</h2></section></section>
-<section><section id="_bola_extra_la_jungla_4_salvemos_el_mundo_groovy_en_android"><h2>Bola extra: La jungla 4. Salvemos el mundo. Groovy en android.</h2></section><section id="_cedric_champeau_los_posts_de_cedric_son_de_donde_he_sacado_la_mayor_informacion_sobre_groovy_android_a_href_https_github_com_melix_class_bare_https_github_com_melix_a"><h2>Cedric Champeau: los posts de cedric son de donde he sacado la mayor informacion sobre Groovy/Android <a href="https://github.com/melix" class="bare">https://github.com/melix</a></h2></section><section id="_swissknife_biblioteca_groovy_para_reducir_el_codigo_de_una_aplicacion_android_con_groovy_a_href_https_github_com_arasthel_swissknife_class_bare_https_github_com_arasthel_swissknife_a_o_a_href_http_arasthel_github_io_swissknife_class_bare_http_arasthel_github_io_swissknife_a"><h2>SwissKnife: Biblioteca Groovy para reducir el codigo de una aplicacion Android con Groovy. <a href="https://github.com/Arasthel/SwissKnife" class="bare">https://github.com/Arasthel/SwissKnife</a> o <a href="http://arasthel.github.io/SwissKnife/" class="bare">http://arasthel.github.io/SwissKnife/</a></h2></section><section id="_grooid_templates_generador_de_proyectos_de_groovy_android_con_lazybones_a_href_http_mariogarcia_github_io_grooid_templates_class_bare_http_mariogarcia_github_io_grooid_templates_a"><h2>Grooid templates: Generador de proyectos de Groovy/Android con Lazybones. <a href="http://mariogarcia.github.io/grooid-templates/" class="bare">http://mariogarcia.github.io/grooid-templates/</a></h2></section><section id="_refencia_a_href_https_www_youtube_com_watch_v_e1i2h9fyeno_class_bare_https_www_youtube_com_watch_v_e1i2h9fyeno_a"><h2>Refencia: <a href="https://www.youtube.com/watch?v=e1I2h9fyeno" class="bare">https://www.youtube.com/watch?v=e1I2h9fyeno</a></h2></section><section id="_groovy_gradle_asciidoctor"><h2>Groovy/Gradle/Asciidoctor</h2></section><section id="_diferencias_entre_ascidoctor_y_ascidoc"><h2>Diferencias entre ascidoctor y ascidoc</h2></section><section id="__a_href_http_asciidoctor_org_docs_asciidoc_asciidoctor_diffs_class_bare_http_asciidoctor_org_docs_asciidoc_asciidoctor_diffs_a"><h2><a href="http://asciidoctor.org/docs/asciidoc-asciidoctor-diffs/" class="bare">http://asciidoctor.org/docs/asciidoc-asciidoctor-diffs/</a></h2></section><section id="_jbake_thymeleaf_a_href_https_github_com_jbake_org_jbake_example_project_thymeleaf_class_bare_https_github_com_jbake_org_jbake_example_project_thymeleaf_a"><h2>Jbake + thymeleaf: <a href="https://github.com/jbake-org/jbake-example-project-thymeleaf" class="bare">https://github.com/jbake-org/jbake-example-project-thymeleaf</a></h2></section><section id="_asciidoctorj_groovy_dsl_a_href_https_github_com_asciidoctor_asciidoctorj_groovy_dsl_class_bare_https_github_com_asciidoctor_asciidoctorj_groovy_dsl_a"><h2>asciidoctorj-groovy-dsl: <a href="https://github.com/asciidoctor/asciidoctorj-groovy-dsl" class="bare">https://github.com/asciidoctor/asciidoctorj-groovy-dsl</a></h2></section></section></div></div><script src="reveal.js/lib/js/head.min.js"></script><script src="reveal.js/js/reveal.js"></script><script type="text/javascript">// See https://github.com/hakimel/reveal.js#configuration for a full list of configuration options
-Reveal.initialize({
-  // Display controls in the bottom right corner
-  controls: true,
-  // Display a presentation progress bar
-  progress: true,
-  // Display the page number of the current slide
-  slideNumber: false,
-  // Push each slide change to the browser history
-  history: false,
-  // Enable keyboard shortcuts for navigation
-  keyboard: true,
-  // Enable the slide overview mode
-  overview: true,
-  // Vertical centering of slides
-  center: true,
-  // Enables touch navigation on devices with touch input
-  touch: true,
-  // Loop the presentation
-  loop: false,
-  // Change the presentation direction to be RTL
-  rtl: false,
-  // Turns fragments on and off globally
-  fragments: true,
-  // Flags if the presentation is running in an embedded mode,
-  // i.e. contained within a limited portion of the screen
-  embedded: false,
-  // Number of milliseconds between automatically proceeding to the
-  // next slide, disabled when set to 0, this value can be overwritten
-  // by using a data-autoslide attribute on your slides
-  autoSlide: 0,
-  // Stop auto-sliding after user input
-  autoSlideStoppable: true,
-  // Enable slide navigation via mouse wheel
-  mouseWheel: false,
-  // Hides the address bar on mobile devices
-  hideAddressBar: true,
-  // Opens links in an iframe preview overlay
-  previewLinks: false,
-  // Theme (e.g., beige, black, blood, league, moon, night, serif, simple, sky, solarized, white)
-  // NOTE setting the theme in the config no longer works in reveal.js 3.x
-  //theme: Reveal.getQueryHash().theme || 'blood',
-  // Transition style (e.g., none, fade, slide, convex, concave, zoom)
-  transition: Reveal.getQueryHash().transition || 'slide',
-  // Transition speed (e.g., default, fast, slow)
-  transitionSpeed: 'default',
-  // Transition style for full page slide backgrounds (e.g., none, fade, slide, convex, concave, zoom)
-  backgroundTransition: 'fade',
-  // Number of slides away from the current that are visible
-  viewDistance: 3,
-  // Parallax background image (e.g., "'https://s3.amazonaws.com/hakim-static/reveal-js/reveal-parallax-1.jpg'")
-  parallaxBackgroundImage: '',
-  // Parallax background size in CSS syntax (e.g., "2100px 900px")
-  parallaxBackgroundSize: '',
+*/
+html, .view body {
+  background-color: black;
+  counter-reset: slideidx;
+}
+body, .view section {
+  background-color: white;
+  border-radius: 12px;
+}
+section, .view head > title {
+  /* The font from Google */
+  font-family: 'Oswald', Arial, serif;
+  font-size: 30px;
+}
+.view section:after {
+  counter-increment: slideidx;
+  content: counter(slideidx, decimal-leading-zero);
+  position: absolute;
+  bottom: -80px;
+  right: 100px;
+  color: white;
+}
+.view head > title {
+  color: white;
+  text-align: center;
+  margin: 1em 0 1em 0;
+}
+h1, h2 {
+  margin-top: 200px;
+  text-align: center;
+  font-size: 80px;
+}
+h3 {
+  margin: 100px 0 50px 100px;
+}
 
-  // The "normal" size of the presentation, aspect ratio will be preserved
-  // when the presentation is scaled to fit different resolutions. Can be
-  // specified using percentage units.
-  width: 960,
-  height: 700,
+ul {
+    margin: 50px 200px;
+}
+p {
+  margin: 75px;
+  font-size: 50px;
+}
+blockquote {
+  height: 100%;
+  background-color: black;
+  color: white;
+  font-size: 60px;
+  padding: 50px;
+}
+blockquote:before {
+  content: open-quote;
+}
+blockquote:after {
+  content: close-quote;
+}
+/* Figures are displayed full-page, with the caption
+   on top of the image/video */
+figure {
+  background-color: black;
+}
+figcaption {
+  margin: 70px;
+  font-size: 50px;
+}
+footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  padding: 40px;
+  text-align: right;
+  background-color: #F3F4F8;
+  border-top: 1px solid #CCC;
+}
+.view section {
+  -moz-transition: none;
+  -webkit-transition: none;
+  -ms-transition: none;
+  transition: none;
+}
+.view section[aria-selected] {
+  border: 5px red solid;
+}
 
-  // Factor of the display size that should remain empty around the content
-  margin: 0.1,
+/* Incremental elements */
 
-  // Bounds for smallest/largest possible scale to apply to content
-  minScale: 0.2,
-  maxScale: 1.5,
+/* Items already covered */
+.incremental > * {
+  opacity: 1;
+}
+/* Current item */
+.incremental > *[aria-selected] {
+  opacity: 1;
+}
+/* Items to be shown */
+.incremental > *[aria-selected] ~ * {
+  opacity: 0;
+}
+/* The progressbar, at the bottom of the slides, show the global
+   progress of the presentation. */
+#progress-bar {
+  height: 2px;
+  background: #AAA;
+}
+</style><style>
+* {
+  margin: 0;
+  padding: 0;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+details {
+  display: none;
+}
+/* default aspect is 4:3 */
+body {
+  width: 800px;
+  height: 600px;
+  margin-left: -400px;
+  margin-top: -300px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  overflow: hidden;
+  display: none;
+}
+.aspect-16-10 body {
+  height: 500px; 
+  margin-top: -250px;
+}
+.aspect-16-9 body {
+  height: 450px; 
+  margin-top: -225px;
+}
+.view body {
+  position: static;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  display: inline-block;
+  overflow: visible;
+  overflow-x: hidden;
+  /* undo Dz.onresize */
+  transform: none !important;
+  -moz-transform: none !important;
+  -webkit-transform: none !important;
+  -o-transform: none !important;
+  -ms-transform: none !important;
+}
+.view head, .view head > title {
+  display: block;
+}
+section {
+  position: absolute;
+  pointer-events: none;
+  width: 100%;
+  height: 100%;
+}
+.view section {
+  pointer-events: auto;
+  position: static;
+  width: 800px;
+  height: 600px;
+  margin: -150px -200px;
+  float: left;
+  transform: scale(.4);
+  -moz-transform: scale(.4);
+  -webkit-transform: scale(.4);
+  -o-transform: scale(.4);
+  -ms-transform: scale(.4);
+}
+.view.aspect-16-10 section {
+  height: 500px;
+  margin-top: -125px;
+  margin-bottom: -125px;
+}
+.view.aspect-16-9 section {
+  height: 450px;
+  margin-top: -112px;
+  margin-bottom: -113px;
+}
+.view section > * {
+  pointer-events: none;
+}
+section[aria-selected] {
+  pointer-events: auto;
+}
+html {
+  overflow: hidden;
+}
+html.view {
+  overflow: visible;
+}
+body.loaded {
+  display: block;
+}
+.incremental {
+  visibility: hidden;
+}
+.incremental[active] {
+  visibility: visible;
+}
+#progress-bar {
+  bottom: 0;
+  position: absolute;
+  -moz-transition: width 400ms linear 0s;
+  -webkit-transition: width 400ms linear 0s;
+  -ms-transition: width 400ms linear 0s;
+  transition: width 400ms linear 0s;
+}
+.view #progress-bar {
+  display: none;
+}
+figure {
+  width: 100%;
+  height: 100%;
+}
+figure > * {
+  position: absolute;
+}
+figure > img, figure > video, figure > embed {
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
 
-  // Optional libraries used to extend on reveal.js
-  dependencies: [
-      { src: 'reveal.js/lib/js/classList.js', condition: function() { return !document.body.classList; } },
-      { src: 'reveal.js/plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
-      { src: 'reveal.js/plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
-      
-      { src: 'reveal.js/plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
-      { src: 'reveal.js/plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } }
-  ]
-});</script></body></html>
+/* Slide flipping */
+
+/* Previous */
+section {
+  opacity: 0;
+}
+.view section {
+  opacity: 1;
+}
+/* Current */
+section[aria-selected] {
+  opacity: 1;
+}
+/* Next */
+section[aria-selected] ~ section {
+  opacity: 0;
+}
+.view section[aria-selected] ~ section {
+  opacity: 1;
+}
+</style><style>
+/* Horizontal slide transition */
+section {
+  -moz-transition: left 500ms ease-in-out 0s;
+  -webkit-transition: left 500ms ease-in-out 0s;
+  -ms-transition: left 500ms ease-in-out 0s;
+  transition: left 500ms ease-in-out 0s;
+}
+/* Before */
+section {
+  left: -150%;
+  opacity: 1;
+}
+/* Current */
+section[aria-selected] {
+  left: 0;
+}
+/* After */
+section[aria-selected] ~ section {
+  left: 150%;
+  opacity: 1;
+}
+</style></head><body><section class="title"><h1>Indice</h1><footer><span class="author">Build Tools: Grad' to the future</span></footer></section><section><h2>Abstract</h2><p>¿Eres javero de toda la vida? ¿Mavenizas todo lo que tocas? ¿Diste tus primeros pasos con la hormiga? Regresa al futuro, tenemos groovy, tenemos gradle y mas de cien plugins que valen la pena.</p>
+<p>Asi que si quieres saber como dar el salto a la "build tool" del presente, acompañame porque veremos:</p>
+<ul><li>Como partiendo de un proyecto springboot con maven,</li><li>podemos transformar librerias constuirdas con gradle a maven,</li><li>para darnos cuenta de que lo que interesa es migrar nuestro proyecto a gradle,</li><li>y para entender como funciona esta build tool, recorreremos el ciclo de vida en un proyecto gradle,</li><li>veremos que mas puede hacer gradle (incluso fuera de la JVM)</li><li>y como bola extra daremos un repaso a otras las build tools de las que no sabia su existencia.</li></ul></section>
+<section><h2>Quien soy</h2><p>Javero de nacimiento, pero ciudadano de la JVM. Trabajando ya unos años en Tecnilogica, siempre con Java a capa y espada, pero con ganas de Groovy. Sospechoso de MadridGUG, donde siempre hay algo que aprender. Debian distro fan, siempre con ganas de trastear, ahora con algo de hardware. Marido y padre de 2 niñas, que me dan un punto de vista "bajito" de las cosas.</p>
+<section><h2>Como conocí groovy a través de freemind y la lectura de tareas de fogbuz</h2><p>La primera vez que hoy hablar de groovy seria a finales de 2010, principios de 2011. Yo usaba Freemind para hacer mapas mentales, y por aquel entonces la version 0.9 estaba a punto de salir, con soporte para groovy, ¿que era eso?</p>
+<p>¿Un lenguaje dinamico como Javascript, que podia poner en el nodo de mi mapa mental para que hicera algo? Lo probe he hice cosas como estas, con la ayuda de la documentacion que encontraba por ahi&#8230;&#8203;</p>
+<div class="listingblock"><div class="title">Java code from project</div><pre class="highlight"><code class="java">Unresolved directive in README.adoc - include::{sourcedir01}/prueba.java[tags=contains,indent=0]</code></pre></div>
+<div class="listingblock"><pre class="highlight"><code class="groovy">class ClienteQuery {
+
+	def query = new Query();
+	def getQuery(q) {
+		println "Se va a realizar la query: "+q
+		query.getQuery(q)
+	}
+	String toString() { 'Client: ' + hashCode()}
+
+}</code></pre></div></section>
+<section><h2>Como conocí Greach. Java hispano a posteriormente vi los vídeos.</h2><p>Por aquella epoca aun tenia tiempo y granas de aprender (ahora lo que no tengo es tiempo) y me puse a escuchar, casi desde el principio, todos los podcast de JavaHispano, en el coche de camino al trabajo (trabajando en madrid sabemos que las distancias no son relativas), y en uno hablaron del Greach.</p>
+<p>Lo que tiene escuhcar las cosas en diferido es que si son interactivas, no se puede participar, y aquella conferencia habia siado hace unos meses, pero siempre nos quedara Youtube, asi que me vi todos los videos, y me apunte al Greach 2.0 de Enero de 2013.</p></section>
+<section><h2>En greach conocí Madrid GUG</h2><p>Alli alguien habldo del grupo de usuarios de groovy de madrid, y me dije, seguro que aprendo algo, y asisti a charlas muy interesantes, hasta me anime a colaborar y dar una, elegi Dropwrizar, y lo groovizamos un poco&#8230;&#8203;</p></section></section>
+<section><h2>Regreso al futuro</h2><img src="backtofuture_trilogy.jpg" alt="backtofuture trilogy" />
+<details><details open=""><summary>Notes</summary><p>Ahora empieza lo bueno&#8230;&#8203;</p></details></details></section>
+<section><h2>Maven: Regreso al futuro I</h2><section><h2>Proyecto de ejemplo springboot para cms con jacrabbit</h2><section><h2>Api de creación</h2></section>
+<section><h2>Api que lista tipos disponibles</h2></section></section>
+<section><h2>A tener en cuenta</h2><p>Maven por defecto, esta preparado para compilar un proyecto java, no hace falta añadir plugin,
+y si queremos sobreescribir ese comportamiento podemos poner el plugin y cambiar valores.</p></section>
+<section><h2>Usar librerías gradle migrandola a maven</h2></section>
+<section><h2>Añadir al proyecto puntos extra con pluging</h2><section><h2>Documentación</h2></section>
+<section><h2>Lectura de json para api (doc tipo swagger) y mostrar en doc tipos disponibles</h2></section></section></section>
+<section><h2>Gradle: Regreso al futuro II</h2><section><h2>Que es gradle</h2><section><h2>Groovy</h2></section>
+<section><h2>Tasks</h2></section>
+<section><h2>Consola</h2></section></section>
+<section><h2>A tener en cuenta</h2><p>En gradle, tenemos que "apply plugin" para que haga algo por defecto.
+Sino es un subconjunto de tareas que no tienen porque compilar.</p>
+<p>Por tanto, sino añadimos plugin java, no compila, y una vez puesto, tambien podemos sobreescribirlo.</p></section>
+<section><h2>Creación de plugins inline</h2><section><h2>Saber de donde esta cogiendo mis librerias</h2></section></section>
+<section><h2>Que tiene que aportar respecto a maven. Puntos fuertes/debiles</h2><section><h2>Round 1: Xml vs Codigo</h2></section>
+<section><h2>Round 2: Convecion sobre configuracion</h2></section>
+<section><h2>Round 3: Ciclo de vida mas extenso</h2></section>
+<section><h2>Round 4: Scripting, mas facil por ser codigo</h2></section>
+<section><h2>Round 5: Puede “agrupar” dependencias</h2></section>
+<section><h2>Round 6: soporte en ides algo menor.</h2></section></section>
+<section><h2>Asciidoctor para documentos</h2><section><h2>Generando el .adoc desde un builder</h2></section>
+<section><h2>Revisar plugin de jbake para gradle</h2></section></section>
+<section><h2>Crear plugin para ejecutar tareas creadas en gradle para spring-batch</h2></section>
+<section><h2>Gradle como herramienta para proyectos en cualquier lenguaje de la JVM (Java/Groovy/Clojure/Scala) y no de la JVM (Cpp por ejemplo)</h2><section><h2>¿Compilar librería scala para usar dentro de spring boot?</h2></section>
+<section><h2>Compilar C+: <a href="http://carlosvin.github.io/posts/gradle-cpp.html" class="bare">http://carlosvin.github.io/posts/gradle-cpp.html</a></h2></section></section>
+<section><h2>Como usar su ciclo de vida para NO compilar sobreescribiendo los puntos principales y hacer otra cosa</h2><ul><li>En maven hay ciclo de vida, pero en ant y gradle hay tareas&#8230;&#8203; por tanto hay esta la diferencia&#8230;&#8203;</li></ul></section>
+<section><h2>building en paralelo</h2></section>
+<section><h2>Es sencillo pasar posibles tareas a plugins (buildSrc -&#8594; construccion de plugin) en comparación con maven</h2></section>
+<section><h2>Quien lo usa</h2><section><h2>Liferay</h2><p>Para la creacion de los elementos de liferay, encapsulan dentro de un ejecutable, la llamada a gradle</p>
+<p>../tools/gradle/gradlew --build-file=../sdk.gradle -PthemeName=$1 -PthemeDisplayName=\"$2\" createTheme</p></section></section>
+<section><h2>Por donde empezar</h2></section></section>
+<section><h2>Lo que había antes: Regreso al futuro III</h2><section><h2>Ant (ivy)</h2><section><h2>Configuracion sobre convencion</h2></section>
+<section><h2>Basado en xml</h2></section>
+<section><h2>No gestiona bien dependencias (Ivy)</h2></section></section>
+<section><h2>Make</h2></section></section>
+<section><h2>Bola extra: La jungla 4.</h2><section><h2>Otras build tools</h2><ul><li><a href="http://pantsbuild.github.io/from_maven.html">Pants</a></li><li><a href="http://tweaker.sourceforge.net/general_overview.xml">Tweaker</a></li></ul></section></section>
+<section><h2>Bola extra 2: Salvemos el mundo. Groovy en android.</h2><section><h2>Cedric Champeau: los posts de cedric son de donde he sacado la mayor informacion sobre Groovy/Android <a href="https://github.com/melix" class="bare">https://github.com/melix</a></h2></section>
+<section><h2>SwissKnife: Biblioteca Groovy para reducir el codigo de una aplicacion Android con Groovy. <a href="https://github.com/Arasthel/SwissKnife" class="bare">https://github.com/Arasthel/SwissKnife</a> o <a href="http://arasthel.github.io/SwissKnife/" class="bare">http://arasthel.github.io/SwissKnife/</a></h2></section>
+<section><h2>Grooid templates: Generador de proyectos de Groovy/Android con Lazybones. <a href="http://mariogarcia.github.io/grooid-templates/" class="bare">http://mariogarcia.github.io/grooid-templates/</a></h2></section>
+<section><h2>Refencia: <a href="https://www.youtube.com/watch?v=e1I2h9fyeno" class="bare">https://www.youtube.com/watch?v=e1I2h9fyeno</a></h2></section>
+<section><h2>Groovy/Gradle/Asciidoctor</h2></section>
+<section><h2>Diferencias entre ascidoctor y ascidoc</h2></section>
+<section><h2><a href="http://asciidoctor.org/docs/asciidoc-asciidoctor-diffs/" class="bare">http://asciidoctor.org/docs/asciidoc-asciidoctor-diffs/</a></h2></section>
+<section><h2>Jbake + thymeleaf: <a href="https://github.com/jbake-org/jbake-example-project-thymeleaf" class="bare">https://github.com/jbake-org/jbake-example-project-thymeleaf</a></h2></section>
+<section><h2>asciidoctorj-groovy-dsl: <a href="https://github.com/asciidoctor/asciidoctorj-groovy-dsl" class="bare">https://github.com/asciidoctor/asciidoctorj-groovy-dsl</a></h2></section></section><script>
+//   __  __  __       .  __   ___  __
+//  |  \  / /__` |    | |  \ |__  /__`
+//  |__/ /_ .__/ |___ | |__/ |___ .__/ core :€
+//
+var Dz = {
+  remoteWindows: [],
+  idx: -1,
+  step: 0,
+  html: null,
+  slides: null,
+  progressBar : null,
+  params: {
+    autoplay: "1"
+  }
+};
+
+Dz.init = function() {
+  document.body.className = "loaded";
+  this.slides = Array.prototype.slice.call($$("body > section"));
+  this.progressBar = $("#progress-bar");
+  if (!this.progressBar) {
+    this.progressBar = document.createElement('div');
+    this.progressBar.id = 'progress-bar';
+    document.body.appendChild(this.progressBar);
+  }
+  this.html = document.body.parentNode;
+  this.setupParams();
+  this.onhashchange();
+  this.setupTouchEvents();
+  this.onresize();
+  this.setupView();
+}
+
+Dz.setupParams = function() {
+  var p = window.location.search.substr(1).split('&');
+  p.forEach(function(e, i, a) {
+    var keyVal = e.split('=');
+    Dz.params[keyVal[0]] = decodeURIComponent(keyVal[1]);
+  });
+// Specific params handling
+  if (!+this.params.autoplay)
+    $$.forEach($$("video"), function(v){ v.controls = true });
+}
+
+Dz.onkeydown = function(aEvent) {
+  // skip keystrokes in a content editable region
+  if (aEvent.target.isContentEditable) {
+    return;
+  }
+
+  // Don't intercept keyboard shortcuts
+  if (aEvent.altKey
+    || aEvent.ctrlKey
+    || aEvent.metaKey
+    || aEvent.shiftKey) {
+    return;
+  }
+  if ( aEvent.keyCode == 37 // left arrow
+    || aEvent.keyCode == 38 // up arrow
+    || aEvent.keyCode == 33 // page up
+    || aEvent.keyCode == 8 // backspace
+    || aEvent.keyCode == 75 // k
+  ) {
+    aEvent.preventDefault();
+    this.back();
+  }
+  else if ( aEvent.keyCode == 39 // right arrow
+    || aEvent.keyCode == 40 // down arrow
+    || aEvent.keyCode == 34 // page down
+    || aEvent.keyCode == 32 // space
+    || aEvent.keyCode == 74 // j
+  ) {
+    aEvent.preventDefault();
+    this.forward();
+  }
+  else if (aEvent.keyCode == 35) { // end
+    aEvent.preventDefault();
+    this.goEnd();
+  }
+  else if (aEvent.keyCode == 36) { // home
+    aEvent.preventDefault();
+    this.goStart();
+  }
+  else if (aEvent.keyCode == 80) { // p
+    aEvent.preventDefault();
+    this.toggleContent();
+  }
+  else if (aEvent.keyCode == 70) { // f
+    aEvent.preventDefault();
+    this.goFullscreen();
+  }
+  else if (aEvent.keyCode == 79) { // o
+    aEvent.preventDefault();
+    this.toggleView();
+  }
+}
+
+/* Touch Events */
+
+Dz.setupTouchEvents = function() {
+  var orgX, newX;
+  var tracking = false;
+
+  var db = document.body;
+  db.addEventListener("touchstart", start.bind(this), false);
+  db.addEventListener("touchmove", move.bind(this), false);
+
+  function start(aEvent) {
+    aEvent.preventDefault();
+    tracking = true;
+    orgX = aEvent.changedTouches[0].pageX;
+  }
+
+  function move(aEvent) {
+    if (!tracking) return;
+    newX = aEvent.changedTouches[0].pageX;
+    if (orgX - newX > 100) {
+      tracking = false;
+      this.forward();
+    } else {
+      if (orgX - newX < -100) {
+        tracking = false;
+        this.back();
+      }
+    }
+  }
+}
+
+Dz.setupView = function() {
+  document.body.addEventListener("click", function ( e ) {
+    if (!Dz.html.classList.contains("view")) return;
+    if (!e.target || e.target.nodeName != "SECTION") return;
+
+    Dz.html.classList.remove("view");
+    Dz.setCursor(Dz.slides.indexOf(e.target) + 1);
+  }, false);
+}
+
+/* Adapt the size of the slides to the window */
+
+Dz.onresize = function() {
+  var db = document.body;
+  var sx = db.clientWidth / window.innerWidth;
+  var sy = db.clientHeight / window.innerHeight;
+  var transform = "scale(" + (1/Math.max(sx, sy)) + ")";
+
+  db.style.MozTransform = transform;
+  db.style.WebkitTransform = transform;
+  db.style.OTransform = transform;
+  db.style.msTransform = transform;
+  db.style.transform = transform;
+}
+
+Dz.getDetails = function(aIdx) {
+  var s = $("section:nth-of-type(" + aIdx + ")");
+  var d = s.$("details");
+  return d ? d.innerHTML : "";
+}
+
+Dz.getAspect = function() {
+  var match = document.documentElement.className.match(/\baspect-([0-9]+)-([0-9]+)\b/)
+  if (match)
+    return match[1] + ":" + match[2];
+  return "4:3";
+}
+
+Dz.onmessage = function(aEvent) {
+  var argv = aEvent.data.split(" "), argc = argv.length;
+  argv.forEach(function(e, i, a) { a[i] = decodeURIComponent(e) });
+  var win = aEvent.source;
+  if (argv[0] === "REGISTER" && argc === 1) {
+    this.remoteWindows.push(win);
+    this.postMsg(win, "REGISTERED", document.title, this.slides.length);
+    this.postMsg(win, "CURSOR", this.idx + "." + this.step);
+    return;
+  }
+  if (argv[0] === "BACK" && argc === 1)
+    this.back();
+  if (argv[0] === "FORWARD" && argc === 1)
+    this.forward();
+  if (argv[0] === "START" && argc === 1)
+    this.goStart();
+  if (argv[0] === "END" && argc === 1)
+    this.goEnd();
+  if (argv[0] === "TOGGLE_CONTENT" && argc === 1)
+    this.toggleContent();
+  if (argv[0] === "SET_CURSOR" && argc === 2)
+    window.location.hash = "#" + argv[1];
+  if (argv[0] === "GET_CURSOR" && argc === 1)
+    this.postMsg(win, "CURSOR", this.idx + "." + this.step);
+  if (argv[0] === "GET_NOTES" && argc === 1)
+    this.postMsg(win, "NOTES", this.getDetails(this.idx));
+  if (argv[0] === "GET_ASPECT" && argc === 1)
+    this.postMsg(win, "ASPECT", this.getAspect());
+}
+
+Dz.toggleContent = function() {
+  // If a Video is present in this new slide, play it.
+  // If a Video is present in the previous slide, stop it.
+  var s = $("section[aria-selected]");
+  if (s) {
+    var video = s.$("video");
+    if (video) {
+      if (video.ended || video.paused) {
+        video.play();
+      } else {
+        video.pause();
+      }
+    }
+  }
+}
+
+Dz.setCursor = function(aIdx, aStep) {
+  // If the user change the slide number in the URL bar, jump
+  // to this slide.
+  aStep = (aStep != 0 && typeof aStep !== "undefined") ? "." + aStep : ".0";
+  window.location.hash = "#" + aIdx + aStep;
+}
+
+Dz.onhashchange = function() {
+  var cursor = window.location.hash.split("#"),
+      newidx = 1,
+      newstep = 0;
+  if (cursor.length == 2) {
+    newidx = ~~cursor[1].split(".")[0];
+    newstep = ~~cursor[1].split(".")[1];
+    if (newstep > Dz.slides[newidx - 1].$$('.incremental > *').length) {
+      newstep = 0;
+      newidx++;
+    }
+  }
+  this.setProgress(newidx, newstep);
+  if (newidx != this.idx) {
+    this.setSlide(newidx);
+  }
+  if (newstep != this.step) {
+    this.setIncremental(newstep);
+  }
+  for (var i = 0; i < this.remoteWindows.length; i++) {
+    this.postMsg(this.remoteWindows[i], "CURSOR", this.idx + "." + this.step);
+  }
+}
+
+Dz.back = function() {
+  if (this.idx == 1 && this.step == 0) {
+    return;
+  }
+  if (this.step == 0) {
+    this.setCursor(this.idx - 1,
+                   this.slides[this.idx - 2].$$('.incremental > *').length);
+  } else {
+    this.setCursor(this.idx, this.step - 1);
+  }
+}
+
+Dz.forward = function() {
+  if (this.idx >= this.slides.length &&
+      this.step >= this.slides[this.idx - 1].$$('.incremental > *').length) {
+      return;
+  }
+  if (this.step >= this.slides[this.idx - 1].$$('.incremental > *').length) {
+    this.setCursor(this.idx + 1, 0);
+  } else {
+    this.setCursor(this.idx, this.step + 1);
+  }
+}
+
+Dz.goStart = function() {
+  this.setCursor(1, 0);
+}
+
+Dz.goEnd = function() {
+  var lastIdx = this.slides.length;
+  var lastStep = this.slides[lastIdx - 1].$$('.incremental > *').length;
+  this.setCursor(lastIdx, lastStep);
+}
+
+Dz.toggleView = function() {
+  this.html.classList.toggle("view");
+
+  if (this.html.classList.contains("view")) {
+    $("section[aria-selected]").scrollIntoView(true);
+  }
+}
+
+Dz.setSlide = function(aIdx) {
+  this.idx = aIdx;
+  var old = $("section[aria-selected]");
+  var next = $("section:nth-of-type("+ this.idx +")");
+  if (old) {
+    var oldIncremental = old.$('.incremental > *[aria-selected]')
+    if (oldIncremental) {
+      oldIncremental.removeAttribute('aria-selected');
+    }
+    old.removeAttribute("aria-selected");
+    var video = old.$("video");
+    if (video) {
+      video.pause();
+    }
+  }
+  if (next) {
+    next.setAttribute("aria-selected", "true");
+    var video = next.$("video");
+    if (video && !!+this.params.autoplay) {
+      video.play();
+    }
+  } else {
+    // That should not happen
+    this.idx = -1;
+    // console.warn("Slide doesn't exist.");
+  }
+}
+
+Dz.setIncremental = function(aStep) {
+  this.step = aStep;
+  var old = this.slides[this.idx - 1].$('.incremental > *[aria-selected]');
+  if (old) {
+    old.removeAttribute('aria-selected');
+  }
+  var incrementals = $$('.incremental');
+  if (this.step <= 0) {
+    $$.forEach(incrementals, function(aNode) {
+      aNode.removeAttribute('active');
+    });
+    return;
+  }
+  var next = this.slides[this.idx - 1].$$('.incremental > *')[this.step - 1];
+  if (next) {
+    next.setAttribute('aria-selected', true);
+    next.parentNode.setAttribute('active', true);
+    var found = false;
+    $$.forEach(incrementals, function(aNode) {
+      if (aNode != next.parentNode)
+        if (found)
+          aNode.removeAttribute('active');
+        else
+          aNode.setAttribute('active', true);
+      else
+        found = true;
+    });
+  } else {
+    setCursor(this.idx, 0);
+  }
+  return next;
+}
+
+Dz.goFullscreen = function() {
+  var html = $('html'),
+      requestFullscreen = html.requestFullscreen || html.requestFullScreen || html.mozRequestFullScreen || html.webkitRequestFullScreen;
+  if (requestFullscreen) {
+    requestFullscreen.apply(html);
+  }
+}
+
+Dz.setProgress = function(aIdx, aStep) {
+  var slide = $("section:nth-of-type("+ aIdx +")");
+  if (!slide)
+    return;
+  var steps = slide.$$('.incremental > *').length + 1,
+      slideSize = 100 / (this.slides.length - 1),
+      stepSize = slideSize / steps;
+  this.progressBar.style.width = ((aIdx - 1) * slideSize + aStep * stepSize) + '%';
+}
+
+Dz.postMsg = function(aWin, aMsg) { // [arg0, [arg1...]]
+  aMsg = [aMsg];
+  for (var i = 2; i < arguments.length; i++)
+    aMsg.push(encodeURIComponent(arguments[i]));
+  aWin.postMessage(aMsg.join(" "), "*");
+}
+
+function init() {
+  Dz.init();
+  window.onkeydown = Dz.onkeydown.bind(Dz);
+  window.onresize = Dz.onresize.bind(Dz);
+  window.onhashchange = Dz.onhashchange.bind(Dz);
+  window.onmessage = Dz.onmessage.bind(Dz);
+}
+
+document.addEventListener('DOMContentLoaded', init, false);
+
+// Helpers
+if (!Function.prototype.bind) {
+  Function.prototype.bind = function (oThis) {
+
+    // closest thing possible to the ECMAScript 5 internal IsCallable
+    // function 
+    if (typeof this !== "function")
+    throw new TypeError(
+      "Function.prototype.bind - what is trying to be fBound is not callable"
+    );
+
+    var aArgs = Array.prototype.slice.call(arguments, 1),
+        fToBind = this,
+        fNOP = function () {},
+        fBound = function () {
+          return fToBind.apply( this instanceof fNOP ? this : oThis || window,
+                 aArgs.concat(Array.prototype.slice.call(arguments)));
+        };
+
+    fNOP.prototype = this.prototype;
+    fBound.prototype = new fNOP();
+
+    return fBound;
+  };
+}
+
+var $ = (HTMLElement.prototype.$ = function(aQuery) {
+  return this.querySelector(aQuery);
+}).bind(document);
+
+var $$ = (HTMLElement.prototype.$$ = function(aQuery) {
+  return this.querySelectorAll(aQuery);
+}).bind(document);
+
+$$.forEach = function(nodeList, fun) {
+  Array.prototype.forEach.call(nodeList, fun);
+}
+</script></body></html>

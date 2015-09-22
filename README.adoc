@@ -1,12 +1,5 @@
 = Indice
-Jose Juan Montiel <josejuan.montiel@tecnilogica.com>
 Build Tools: Grad' to the future
-:toc:
-:source-highlighter: coderay
-:revealjs_theme:  blood
-// :revealjs_parallaxBackgroundImage: images/backtofuture_trilogy.jpg
-:imagesdir: images/
-:sourcedir01: 001-ejemplo1/src/main/java
 
 == Abstract
 ¿Eres javero de toda la vida? ¿Mavenizas todo lo que tocas? ¿Diste tus primeros pasos con la hormiga? Regresa al futuro, tenemos groovy, tenemos gradle y mas de cien plugins que valen la pena.
@@ -21,19 +14,13 @@ Asi que si quieres saber como dar el salto a la "build tool" del presente, acomp
 * y como bola extra daremos un repaso a otras las build tools de las que no sabia su existencia.
 
 == Quien soy
-Javero de nacimiento, pero ciudadano de la JVM.
-Trabajando ya unos años en Tecnilogica, siempre con Java a capa y espada, pero con ganas de Groovy.
-Sospechoso de MadridGUG, donde siempre hay algo que aprender.
-Debian distro fan, siempre con ganas de trastear, ahora con algo de hardware.
-Marido y padre de 2 niñas, que me dan un punto de vista "bajito" de las cosas.
+Javero de nacimiento, pero ciudadano de la JVM. Trabajando ya unos años en Tecnilogica, siempre con Java a capa y espada, pero con ganas de Groovy. Sospechoso de MadridGUG, donde siempre hay algo que aprender. Debian distro fan, siempre con ganas de trastear, ahora con algo de hardware. Marido y padre de 2 niñas, que me dan un punto de vista "bajito" de las cosas.
 
 === Como conocí groovy a través de freemind y la lectura de tareas de fogbuz
 
-La primera vez que hoy hablar de groovy seria a finales de 2010, principios de 2011.
-Yo usaba Freemind para hacer mapas mentales, y por aquel entonces la version 0.9 estaba a punto de salir,
-con soporte para groovy, que era eso? Un lenguaje dinamico como Javascript, que podia poner en el nodo de
-mi mapa mental para que hicera algo? Lo probe he hice cosas como estas, con la ayuda de la documentacion
-que encontraba por ahi...
+La primera vez que hoy hablar de groovy seria a finales de 2010, principios de 2011. Yo usaba Freemind para hacer mapas mentales, y por aquel entonces la version 0.9 estaba a punto de salir, con soporte para groovy, ¿que era eso?
+
+¿Un lenguaje dinamico como Javascript, que podia poner en el nodo de mi mapa mental para que hicera algo? Lo probe he hice cosas como estas, con la ayuda de la documentacion que encontraba por ahi...
 
 [source,java]
 .Java code from project
@@ -55,16 +42,15 @@ class ClienteQuery {
 }
 ----
 
-=== Como conocí greach. Java hispano a posteriormente vi los vídeos.
+=== Como conocí Greach. Java hispano a posteriormente vi los vídeos.
 
-Poco despues, escuchaba todo los podcast de JavaHispano, en el coche camino del trabajo, y en uno hablaron del Greach,
-que era eso, una conferencia, ya habia asistido a algunas organizadas por JavaHispano, asi que a esa primera no llegue,
-me vi los videos, y me apunte al Greach 2.0 de Enero de 2013.
+Por aquella epoca aun tenia tiempo y granas de aprender (ahora lo que no tengo es tiempo) y me puse a escuchar, casi desde el principio, todos los podcast de JavaHispano, en el coche de camino al trabajo (trabajando en madrid sabemos que las distancias no son relativas), y en uno hablaron del Greach.
 
-=== En greach conocí Madrid gug
+Lo que tiene escuhcar las cosas en diferido es que si son interactivas, no se puede participar, y aquella conferencia habia siado hace unos meses, pero siempre nos quedara Youtube, asi que me vi todos los videos, y me apunte al Greach 2.0 de Enero de 2013.
 
-Alli alguien habldo del grupo de usuarios de groovy de madrid, y me dije, seguro que aprendo algo, y asisti a charlas muy
-interesantes, hasta que me anime a colaborar y dar una, elegi Dropwrizar, y lo groovizamos un poco...
+=== En greach conocí Madrid GUG
+
+Alli alguien habldo del grupo de usuarios de groovy de madrid, y me dije, seguro que aprendo algo, y asisti a charlas muy interesantes, hasta me anime a colaborar y dar una, elegi Dropwrizar, y lo groovizamos un poco...
 
 == Regreso al futuro
 image::backtofuture_trilogy.jpg[]
@@ -74,6 +60,7 @@ image::backtofuture_trilogy.jpg[]
 Ahora empieza lo bueno...
 --
 
+[canvas-image=./images/backtofuture_trilogy.jpg]
 == Maven: Regreso al futuro I
 
 === Proyecto de ejemplo springboot para cms con jacrabbit
@@ -117,17 +104,25 @@ Por tanto, sino añadimos plugin java, no compila, y una vez puesto, tambien pod
 
 === Asciidoctor para documentos
 ==== Generando el .adoc desde un builder
+==== Revisar plugin de jbake para gradle
+
+=== Crear plugin para ejecutar tareas creadas en gradle para spring-batch
 
 === Gradle como herramienta para proyectos en cualquier lenguaje de la JVM (Java/Groovy/Clojure/Scala) y no de la JVM (Cpp por ejemplo)
 ==== ¿Compilar librería scala para usar dentro de spring boot?
 ==== Compilar C+: http://carlosvin.github.io/posts/gradle-cpp.html
 
 === Como usar su ciclo de vida para NO compilar sobreescribiendo los puntos principales y hacer otra cosa
-==== Así ves el ciclo de vida más extenso respecto a maven
+* En maven hay ciclo de vida, pero en ant y gradle hay tareas... por tanto hay esta la diferencia...
 
 === building en paralelo
 === Es sencillo pasar posibles tareas a plugins (buildSrc --> construccion de plugin) en comparación con maven
 === Quien lo usa
+==== Liferay
+Para la creacion de los elementos de liferay, encapsulan dentro de un ejecutable, la llamada a gradle
+
+../tools/gradle/gradlew --build-file=../sdk.gradle -PthemeName=$1 -PthemeDisplayName=\"$2\" createTheme
+
 === Por donde empezar
 
 == Lo que había antes: Regreso al futuro III
@@ -156,14 +151,3 @@ Por tanto, sino añadimos plugin java, no compila, y una vez puesto, tambien pod
 === http://asciidoctor.org/docs/asciidoc-asciidoctor-diffs/
 === Jbake + thymeleaf: https://github.com/jbake-org/jbake-example-project-thymeleaf
 === asciidoctorj-groovy-dsl: https://github.com/asciidoctor/asciidoctorj-groovy-dsl
-
-[data-background="yellow"]
-== Slide Three
-Is very yellow
-
-== Slide Four
-[%step]
-* this
-* is
-* revealed
-* gradually
